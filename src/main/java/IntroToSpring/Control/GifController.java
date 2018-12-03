@@ -4,11 +4,17 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-@Controller
+@Controller //Gets detected during Spring package scanning.
+
 public class GifController {
-    @RequestMapping("/")
-    @ResponseBody
+    @RequestMapping("/") //requests a URI
     public String listGifs(){
-        return "List of all GIFs";
+        return "home";
+    }
+
+    @RequestMapping("/gif")
+    @ResponseBody
+    public String aNewResponse(){
+        return "A New Response";
     }
 }
