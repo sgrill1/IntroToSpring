@@ -54,4 +54,16 @@ assign a GifRepository object to this instance field as soon as it's needed. In 
 
 Now, Spring will pick this up during the initial component scan as a result of the app config being loaded. When the GIF controller needs a GifRepository class, Spring creates one or uses one that's already been created. Creation of objects at runtime (using the Autowired annotation) is known as an injection. Without explicitly writing code to construct and assign objects is called dependency injection.
 
+### Path Variables
+
+Spring has  an option to include  path variables in the URI mapping. Path variables act as place holders that capture a specific parameter. Path variables are declared using the @PathVariable annotation, the are then requested in the @RequestMapping annotation using curly braces. For example
+
+```
+@RequestMapping("/gif/{name}")
+    public String gifDetails(@PathVariable String name, ModelMap modelMap){
+        Gif gif = gifRepository.findByName("android-explosion");
+        modelMap.put("gif", gif);
+        return "gif-details";
+    }
+```
 
