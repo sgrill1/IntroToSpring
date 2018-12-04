@@ -1,15 +1,18 @@
 package IntroToSpring.Control;
 
 import IntroToSpring.Model.Gif;
+import IntroToSpring.data.GifRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import java.time.LocalDate;
-
 @Controller
 
 public class GifController {
+    @Autowired
+    private GifRepository gifRepository;
+
     @RequestMapping("/")
     public String listGifs(){
         return "home";
@@ -17,7 +20,7 @@ public class GifController {
 
     @RequestMapping("/gif")
     public String gifDetails(ModelMap modelMap){
-        Gif gif = new Gif("compiler-bot", LocalDate.of(2015,2,13),"Sam Grill", true);
+        Gif gif = gifRepository.findByName("android-explosion");
         modelMap.put("gif", gif);
         return "gif-details";
     }
