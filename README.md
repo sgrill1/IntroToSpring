@@ -6,13 +6,13 @@ A first web development project using the Spring framework
 
 ### Annotations
 
-* @EnableAutoConfigurtaion:
-* @ComponentScan:
+* @EnableAutoConfigurtaion: Attempts to automatically configure your Spring application based on the jar dependencies that you have added
+* @ComponentScan: Spring will detect any classes annotated with @Component, @Controller, @Service, and @Repository
 * @Controller: Alerts Spring to scan this package when running the @ComponentScan annotation is used.
 * @Request Mapping: Requests a URI, the subsequent method then returns the string associated to the name of the template.
-* @ResponseBody: Used when the return statement is not the string associated to the name of the template.
+* @ResponseBody: Used when the return statement is not the string associated a template.
 * @Autowired: Tells Spring to construct and assign an object to an instance field as soon as it's needed.
-* @Component:
+* @Component: Alerts Spring to scan this package when running the @ComponentScan annotation is used.
 ### Statics: 
 
 * A static is anything that does not change on a live version of the site. For example the CSS, the javascript or any images.
