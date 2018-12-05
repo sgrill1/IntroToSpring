@@ -23,7 +23,7 @@ A first web development project using the Spring framework
 
 ### ThymeLeaf:
 
-* ThymeLeaf is a _server side_ Java template engine used to insert dynamic (non-static) data into an HTML (https://www.thymeleaf.org/documentation.html)
+* ThymeLeaf is a _server side_ Java template engine used to insert dynamic (non-static) data into an HTML. It uses placeholders that get processed at runtime when a user makes a request to the web application. (https://www.thymeleaf.org/documentation.html)
 
 #### Dynamic vs. Static in ThymeLeaf
 
