@@ -1,8 +1,21 @@
 # IntroToSpring
 
+## Last Updated: 05/12/2018
+
 ## Aim
 
-A first web development project using the Spring framework, following the Spring Basics course on Treehouse (https://teamtreehouse.com/library/spring-basics)
+A first web development project using the Spring framework, following the Spring Basics course on Treehouse (https://teamtreehouse.com/library/spring-basics). The aim was to build an application that displayed gifs, with pages for each gif and pages categorizing each gif.
+
+## Instructions
+
+1) Run the applicaiton from main and wait until you see the Spring logo and the alert saying that tomcat is running on port 8080
+2) Go to your browser and open http://localhost:8080
+
+## Pages
+* Index Page
+* Individual Gif Pages
+* A Categorys page
+* Pages containing gifs by category
 
 ## Key Features
 
@@ -75,3 +88,12 @@ assign a GifRepository object to this instance field as soon as it's needed. In 
 ```<a href="#" th:class="(${gif.favorite} ?'un' : '') +'mark favorite'"></a>```
 
 whatever comes before the question mark is the what is going to be either true or false. If true, the 'mark favourite' string literal is concatenated with the 'un', if false, it is concatenated with the empty string.
+
+## Dependencies 
+See the pom.xml file (*Note:* This project was managed using Maven and not Gradle)
+
+## Viable Improvements
+* To categorise the gifs by real categories
+* To add functionality to the favourites page
+* Add Unit tests
+
