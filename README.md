@@ -1,6 +1,6 @@
 # IntroToSpring
 
-A first web development project using the Spring framework
+A first web development project using the Spring framework, following the Spring Basics course on Treehouse (https://teamtreehouse.com/library/spring-basics)
 
 ## Key Features
 
